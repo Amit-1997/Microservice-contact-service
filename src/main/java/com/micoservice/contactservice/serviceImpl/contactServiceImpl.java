@@ -18,6 +18,6 @@ public class contactServiceImpl implements contactService {
 
     @Override
     public List<Contacts> getContactsById(Long id) {
-     return contacts.stream().filter(e->e.getCId().equals(id)).collect(Collectors.toList());
+     return contacts.stream().filter(e->e.getUserId().equals(id)).collect(Collectors.toList());
     }
 }
